@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'sessions', title: 'sessions' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        
+        <div data-bind="dxList: { dataSource: sessions }">
+            <div data-options="dxTemplate : { name: 'item' } " data-bind="dxAction: '#sessions'">
+                <div data-bind="text: word"></div>
+            </div>
+        </div>
+    
+    </div>
+</div>

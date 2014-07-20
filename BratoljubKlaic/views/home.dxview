@@ -1,0 +1,9 @@
+<div data-options="dxView : { name: 'home', title: 'Home' } ">
+    <div class="home-view" data-options="dxContent : { targetPlaceholder: 'content' } ">
+
+        <div data-bind="text: word"></div>
+        <div data-bind="dxButton: { text: 'Slijedeća riječ', clickAction: getWord }"></div>
+        <div data-bind="dxButton: { text: 'Započni igru', clickAction: startSession }"></div>
+
+    </div>
+</div>
