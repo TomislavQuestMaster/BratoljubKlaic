@@ -1,0 +1,8 @@
+<div data-options="dxView : { name: 'define', title: 'Definiranje' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        
+        <div data-bind="dxTextBox: {value: meaning}"></div>
+        <div data-bind="dxButton: { text: 'Definiraj', clickAction: defineMeaning }"></div>
+
+    </div>
+</div>

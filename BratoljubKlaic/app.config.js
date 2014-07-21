@@ -3,14 +3,12 @@ window.BratoljubKlaic = $.extend(true, window.BratoljubKlaic, {
     "layoutSet": "navbar",
     "navigation": [
       {
-        "title": "Home",
+        "title": "Stvori novu",
         "action": "#home",
-        "icon": "home"
       },
       {
-        "title": "sessions",
+        "title": "Aktivne igre",
         "action": "#sessions",
-        "icon": "sessions"
       }
     ]
   }

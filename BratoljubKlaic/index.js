@@ -10,6 +10,7 @@ $(function() {
         navigation: BratoljubKlaic.config.navigation
     });
     BratoljubKlaic.app.router.register(":view/:id", { view: "home", id: undefined });
+    BratoljubKlaic.app.router.register(":view/:id", { view: "define", id: undefined });
 
     BratoljubKlaic.app.navigate();
 });

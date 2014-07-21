@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'definitions', title: 'Definicije' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        
+        <div data-bind="dxList: { dataSource: definitions }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <div data-bind="text: text"></div>
+            </div>
+        </div>
+    
+    </div>
+</div>

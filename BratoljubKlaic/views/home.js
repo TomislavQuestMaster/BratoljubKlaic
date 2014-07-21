@@ -1,6 +1,7 @@
 ﻿BratoljubKlaic.home = function (params) {
 
     var word = ko.observable();
+    var wordId = null;
 
     var getWord = function(){
 
@@ -9,7 +10,8 @@
             url: "http://localhost:8080/word",
             crossDomain: true,
             success: function (data) {
-                word(data);
+                word(data.value);
+                wordId = data.id;
             }
         });
     }
@@ -17,14 +19,21 @@
 
     var startSession = function () {
 
+        if (wordId == null) {
+            return;
+        }
+
         $.ajax({
             type: "POST",
             url: "http://localhost:8080/start",
             contentType: "application/json",
             data: JSON.stringify({
-                user: 'tomo',
-                word: word()
+                scholarId: 1,
+                wordId: wordId
             }),
+            success: function (data) {
+                BratoljubKlaic.app.navigate("define/" + data);
+            },
             crossDomain: true,
             dataType: "json"
         });
